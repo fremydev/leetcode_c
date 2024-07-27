@@ -1,7 +1,7 @@
 bool isPalindrome(int x) {
     int original=x;
     int num;
-long long reversed=0;
+    long long reversed=0;
     while(x>0){
         num=x%10;
 
