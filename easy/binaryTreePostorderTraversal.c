@@ -15,10 +15,10 @@
 #pragma GCC optmize("O3", "unroll-loops")
 void postorder(struct TreeNode* root, int* arr, int* index) {
     if (root == NULL) return;
-    
+
     postorder(root->left, arr, index);
     postorder(root->right, arr, index);
-    
+
     arr[(*index)++] = root->val;
 }
 
